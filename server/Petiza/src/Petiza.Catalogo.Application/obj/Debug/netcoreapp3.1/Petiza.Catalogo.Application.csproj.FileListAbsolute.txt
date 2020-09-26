@@ -1,0 +1,4 @@
+D:\Petiza\Petiza\server\Petiza\src\Petiza.Catalogo.Application\obj\Debug\netcoreapp3.1\Petiza.Catalogo.Application.csprojAssemblyReference.cache
+D:\Petiza\Petiza\server\Petiza\src\Petiza.Catalogo.Application\obj\Debug\netcoreapp3.1\Petiza.Catalogo.Application.AssemblyInfoInputs.cache
+D:\Petiza\Petiza\server\Petiza\src\Petiza.Catalogo.Application\obj\Debug\netcoreapp3.1\Petiza.Catalogo.Application.AssemblyInfo.cs
+D:\Petiza\Petiza\server\Petiza\src\Petiza.Catalogo.Application\bin\Debug\netcoreapp3.1\Petiza.Catalogo.Application.exe

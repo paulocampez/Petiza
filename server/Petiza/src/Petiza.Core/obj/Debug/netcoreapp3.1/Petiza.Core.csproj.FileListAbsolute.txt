@@ -1,0 +1,11 @@
+D:\Petiza\Petiza\server\Petiza\src\Petiza.Core\bin\Debug\netcoreapp3.1\Petiza.Core.exe
+D:\Petiza\Petiza\server\Petiza\src\Petiza.Core\bin\Debug\netcoreapp3.1\Petiza.Core.deps.json
+D:\Petiza\Petiza\server\Petiza\src\Petiza.Core\bin\Debug\netcoreapp3.1\Petiza.Core.runtimeconfig.json
+D:\Petiza\Petiza\server\Petiza\src\Petiza.Core\bin\Debug\netcoreapp3.1\Petiza.Core.runtimeconfig.dev.json
+D:\Petiza\Petiza\server\Petiza\src\Petiza.Core\bin\Debug\netcoreapp3.1\Petiza.Core.dll
+D:\Petiza\Petiza\server\Petiza\src\Petiza.Core\bin\Debug\netcoreapp3.1\Petiza.Core.pdb
+D:\Petiza\Petiza\server\Petiza\src\Petiza.Core\obj\Debug\netcoreapp3.1\Petiza.Core.csprojAssemblyReference.cache
+D:\Petiza\Petiza\server\Petiza\src\Petiza.Core\obj\Debug\netcoreapp3.1\Petiza.Core.AssemblyInfoInputs.cache
+D:\Petiza\Petiza\server\Petiza\src\Petiza.Core\obj\Debug\netcoreapp3.1\Petiza.Core.AssemblyInfo.cs
+D:\Petiza\Petiza\server\Petiza\src\Petiza.Core\obj\Debug\netcoreapp3.1\Petiza.Core.dll
+D:\Petiza\Petiza\server\Petiza\src\Petiza.Core\obj\Debug\netcoreapp3.1\Petiza.Core.pdb

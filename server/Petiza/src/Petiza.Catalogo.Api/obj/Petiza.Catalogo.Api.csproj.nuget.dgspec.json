@@ -1,0 +1,275 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Petiza\\Petiza\\server\\Petiza\\src\\Petiza.Catalogo.Api\\Petiza.Catalogo.Api.csproj": {}
+  },
+  "projects": {
+    "D:\\Petiza\\Petiza\\server\\Petiza\\src\\Petiza.Catalogo.Api\\Petiza.Catalogo.Api.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Petiza\\Petiza\\server\\Petiza\\src\\Petiza.Catalogo.Api\\Petiza.Catalogo.Api.csproj",
+        "projectName": "Petiza.Catalogo.Api",
+        "projectPath": "D:\\Petiza\\Petiza\\server\\Petiza\\src\\Petiza.Catalogo.Api\\Petiza.Catalogo.Api.csproj",
+        "packagesPath": "C:\\Users\\PauloCampez\\.nuget\\packages\\",
+        "outputPath": "D:\\Petiza\\Petiza\\server\\Petiza\\src\\Petiza.Catalogo.Api\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\PauloCampez\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "D:\\Petiza\\Petiza\\server\\Petiza\\src\\Petiza.Catalogo.Application\\Petiza.Catalogo.Application.csproj": {
+                "projectPath": "D:\\Petiza\\Petiza\\server\\Petiza\\src\\Petiza.Catalogo.Application\\Petiza.Catalogo.Application.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+              "target": "Package",
+              "version": "[1.9.10, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[3.1.4, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[5.6.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Petiza\\Petiza\\server\\Petiza\\src\\Petiza.Catalogo.Application\\Petiza.Catalogo.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Petiza\\Petiza\\server\\Petiza\\src\\Petiza.Catalogo.Application\\Petiza.Catalogo.Application.csproj",
+        "projectName": "Petiza.Catalogo.Application",
+        "projectPath": "D:\\Petiza\\Petiza\\server\\Petiza\\src\\Petiza.Catalogo.Application\\Petiza.Catalogo.Application.csproj",
+        "packagesPath": "C:\\Users\\PauloCampez\\.nuget\\packages\\",
+        "outputPath": "D:\\Petiza\\Petiza\\server\\Petiza\\src\\Petiza.Catalogo.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\PauloCampez\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "D:\\Petiza\\Petiza\\server\\Petiza\\src\\Petiza.Catalogo.Domain\\Petiza.Catalogo.Domain.csproj": {
+                "projectPath": "D:\\Petiza\\Petiza\\server\\Petiza\\src\\Petiza.Catalogo.Domain\\Petiza.Catalogo.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[10.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Petiza\\Petiza\\server\\Petiza\\src\\Petiza.Catalogo.Domain\\Petiza.Catalogo.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Petiza\\Petiza\\server\\Petiza\\src\\Petiza.Catalogo.Domain\\Petiza.Catalogo.Domain.csproj",
+        "projectName": "Petiza.Catalogo.Domain",
+        "projectPath": "D:\\Petiza\\Petiza\\server\\Petiza\\src\\Petiza.Catalogo.Domain\\Petiza.Catalogo.Domain.csproj",
+        "packagesPath": "C:\\Users\\PauloCampez\\.nuget\\packages\\",
+        "outputPath": "D:\\Petiza\\Petiza\\server\\Petiza\\src\\Petiza.Catalogo.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\PauloCampez\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "D:\\Petiza\\Petiza\\server\\Petiza\\src\\Petiza.Core\\Petiza.Core.csproj": {
+                "projectPath": "D:\\Petiza\\Petiza\\server\\Petiza\\src\\Petiza.Core\\Petiza.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Petiza\\Petiza\\server\\Petiza\\src\\Petiza.Core\\Petiza.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Petiza\\Petiza\\server\\Petiza\\src\\Petiza.Core\\Petiza.Core.csproj",
+        "projectName": "Petiza.Core",
+        "projectPath": "D:\\Petiza\\Petiza\\server\\Petiza\\src\\Petiza.Core\\Petiza.Core.csproj",
+        "packagesPath": "C:\\Users\\PauloCampez\\.nuget\\packages\\",
+        "outputPath": "D:\\Petiza\\Petiza\\server\\Petiza\\src\\Petiza.Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\PauloCampez\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
