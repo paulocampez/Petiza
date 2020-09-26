@@ -1,3 +1,12 @@
 D:\Petiza\Petiza\server\Petiza\src\Petiza.Catalogo.Domain\obj\Debug\netcoreapp3.1\Petiza.Catalogo.Domain.csprojAssemblyReference.cache
 D:\Petiza\Petiza\server\Petiza\src\Petiza.Catalogo.Domain\obj\Debug\netcoreapp3.1\Petiza.Catalogo.Domain.AssemblyInfoInputs.cache
 D:\Petiza\Petiza\server\Petiza\src\Petiza.Catalogo.Domain\obj\Debug\netcoreapp3.1\Petiza.Catalogo.Domain.AssemblyInfo.cs
+D:\Petiza\Petiza\server\Petiza\src\Petiza.Catalogo.Domain\bin\Debug\netcoreapp3.1\Petiza.Core.exe
+D:\Petiza\Petiza\server\Petiza\src\Petiza.Catalogo.Domain\bin\Debug\netcoreapp3.1\Petiza.Catalogo.Domain.deps.json
+D:\Petiza\Petiza\server\Petiza\src\Petiza.Catalogo.Domain\bin\Debug\netcoreapp3.1\Petiza.Catalogo.Domain.dll
+D:\Petiza\Petiza\server\Petiza\src\Petiza.Catalogo.Domain\bin\Debug\netcoreapp3.1\Petiza.Catalogo.Domain.pdb
+D:\Petiza\Petiza\server\Petiza\src\Petiza.Catalogo.Domain\bin\Debug\netcoreapp3.1\Petiza.Core.dll
+D:\Petiza\Petiza\server\Petiza\src\Petiza.Catalogo.Domain\bin\Debug\netcoreapp3.1\Petiza.Core.pdb
+D:\Petiza\Petiza\server\Petiza\src\Petiza.Catalogo.Domain\obj\Debug\netcoreapp3.1\Petiza.Catalogo.Domain.csproj.CopyComplete
+D:\Petiza\Petiza\server\Petiza\src\Petiza.Catalogo.Domain\obj\Debug\netcoreapp3.1\Petiza.Catalogo.Domain.dll
+D:\Petiza\Petiza\server\Petiza\src\Petiza.Catalogo.Domain\obj\Debug\netcoreapp3.1\Petiza.Catalogo.Domain.pdb

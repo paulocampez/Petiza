@@ -12,7 +12,7 @@ namespace Petiza.Catalogo.Application.Services
         }
         public void Dispose()
         {
-            throw new NotImplementedException();
+            GC.SuppressFinalize(this);
         }
 
         public void Foo()

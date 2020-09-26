@@ -96,3 +96,10 @@ D:\Petiza\Petiza\server\Petiza\src\Petiza.Catalogo.Api\bin\Debug\netcoreapp3.1\P
 D:\Petiza\Petiza\server\Petiza\src\Petiza.Catalogo.Api\bin\Debug\netcoreapp3.1\Petiza.Core.pdb
 D:\Petiza\Petiza\server\Petiza\src\Petiza.Catalogo.Api\obj\Debug\netcoreapp3.1\Petiza.Catalogo.Api.csprojAssemblyReference.cache
 D:\Petiza\Petiza\server\Petiza\src\Petiza.Catalogo.Api\bin\Debug\netcoreapp3.1\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+D:\Petiza\Petiza\server\Petiza\src\Petiza.Catalogo.Api\bin\Debug\netcoreapp3.1\Petiza.Core.exe
+D:\Petiza\Petiza\server\Petiza\src\Petiza.Catalogo.Api\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+D:\Petiza\Petiza\server\Petiza\src\Petiza.Catalogo.Api\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+D:\Petiza\Petiza\server\Petiza\src\Petiza.Catalogo.Api\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\Petiza\Petiza\server\Petiza\src\Petiza.Catalogo.Api\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\Petiza\Petiza\server\Petiza\src\Petiza.Catalogo.Api\bin\Debug\netcoreapp3.1\Petiza.Catalogo.Application.pdb
+D:\Petiza\Petiza\server\Petiza\src\Petiza.Catalogo.Api\bin\Debug\netcoreapp3.1\Petiza.Catalogo.Domain.pdb

@@ -1,4 +1,14 @@
 D:\Petiza\Petiza\server\Petiza\src\Petiza.Catalogo.Application\obj\Debug\netcoreapp3.1\Petiza.Catalogo.Application.csprojAssemblyReference.cache
 D:\Petiza\Petiza\server\Petiza\src\Petiza.Catalogo.Application\obj\Debug\netcoreapp3.1\Petiza.Catalogo.Application.AssemblyInfoInputs.cache
 D:\Petiza\Petiza\server\Petiza\src\Petiza.Catalogo.Application\obj\Debug\netcoreapp3.1\Petiza.Catalogo.Application.AssemblyInfo.cs
-D:\Petiza\Petiza\server\Petiza\src\Petiza.Catalogo.Application\bin\Debug\netcoreapp3.1\Petiza.Catalogo.Application.exe
+D:\Petiza\Petiza\server\Petiza\src\Petiza.Catalogo.Application\bin\Debug\netcoreapp3.1\Petiza.Core.exe
+D:\Petiza\Petiza\server\Petiza\src\Petiza.Catalogo.Application\bin\Debug\netcoreapp3.1\Petiza.Catalogo.Application.deps.json
+D:\Petiza\Petiza\server\Petiza\src\Petiza.Catalogo.Application\bin\Debug\netcoreapp3.1\Petiza.Catalogo.Application.dll
+D:\Petiza\Petiza\server\Petiza\src\Petiza.Catalogo.Application\bin\Debug\netcoreapp3.1\Petiza.Catalogo.Application.pdb
+D:\Petiza\Petiza\server\Petiza\src\Petiza.Catalogo.Application\bin\Debug\netcoreapp3.1\Petiza.Catalogo.Domain.dll
+D:\Petiza\Petiza\server\Petiza\src\Petiza.Catalogo.Application\bin\Debug\netcoreapp3.1\Petiza.Core.dll
+D:\Petiza\Petiza\server\Petiza\src\Petiza.Catalogo.Application\bin\Debug\netcoreapp3.1\Petiza.Catalogo.Domain.pdb
+D:\Petiza\Petiza\server\Petiza\src\Petiza.Catalogo.Application\bin\Debug\netcoreapp3.1\Petiza.Core.pdb
+D:\Petiza\Petiza\server\Petiza\src\Petiza.Catalogo.Application\obj\Debug\netcoreapp3.1\Petiza.Catalogo.Application.csproj.CopyComplete
+D:\Petiza\Petiza\server\Petiza\src\Petiza.Catalogo.Application\obj\Debug\netcoreapp3.1\Petiza.Catalogo.Application.dll
+D:\Petiza\Petiza\server\Petiza\src\Petiza.Catalogo.Application\obj\Debug\netcoreapp3.1\Petiza.Catalogo.Application.pdb

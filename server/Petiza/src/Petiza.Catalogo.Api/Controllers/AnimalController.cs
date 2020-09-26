@@ -20,9 +20,14 @@ namespace Petiza.Catalogo.Api.Controllers
         }
         // GET: api/Animal
         [HttpGet]
-        public IEnumerable<string> Get()
+        public List<Animaizinhos> Get()
         {
-            return new string[] { "value1", "value2" };
+            List<Animaizinhos> animais = new List<Animaizinhos>();
+            Animaizinhos animal1 = new Animaizinhos() { imageUrl = "images/welcome1.png" };
+            Animaizinhos animal2 = new Animaizinhos() { imageUrl = "images/welcome2.png" };
+            animais.Add(animal1);
+            animais.Add(animal2);
+            return animais;
         }
 
         // GET: api/Animal/5
@@ -49,6 +54,11 @@ namespace Petiza.Catalogo.Api.Controllers
         [HttpDelete("{id}")]
         public void Delete(int id)
         {
+        }
+
+        public class Animaizinhos
+        {
+            public string imageUrl { get; set; }
         }
     }
 }

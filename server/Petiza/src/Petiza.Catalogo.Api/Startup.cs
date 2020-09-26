@@ -12,6 +12,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Petiza.Catalogo.Api.Configuration;
+using Petiza.Catalogo.Application.Services;
 
 namespace Petiza.Catalogo.Api
 {
@@ -32,6 +33,8 @@ namespace Petiza.Catalogo.Api
             services.AddAutoMapper(typeof(Startup));
 
             services.AddControllers();
+
+            services.AddScoped<IAnimalApplicationService, AnimalApplicationService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
