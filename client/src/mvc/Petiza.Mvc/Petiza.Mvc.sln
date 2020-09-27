@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29806.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Petiza.Mvc", "Petiza.Mvc\Petiza.Mvc.csproj", "{239E971A-5805-458C-A42F-385423EBC486}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{239E971A-5805-458C-A42F-385423EBC486}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{239E971A-5805-458C-A42F-385423EBC486}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{239E971A-5805-458C-A42F-385423EBC486}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{239E971A-5805-458C-A42F-385423EBC486}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6100CCE7-B989-4D22-9CAE-2A16BE480DFC}
+	EndGlobalSection
+EndGlobal

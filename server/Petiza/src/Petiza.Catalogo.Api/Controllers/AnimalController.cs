@@ -39,9 +39,17 @@ namespace Petiza.Catalogo.Api.Controllers
 
         // POST: api/Animal
         [HttpPost]
-        public void CadastrarAnimal([FromBody] Cliente cliente)
+        public void Post([FromBody] Cliente cliente)
         {
             Ok();
+        }
+
+        [HttpPost]
+        [Route("cadastrar")]
+        public void CadastrarAnimal([FromBody] AnimalViewModel animalVM)
+        {
+            
+            Ok(_animalApplicationService.AdicionarAnimal(animalVM));
         }
 
         // PUT: api/Animal/5
