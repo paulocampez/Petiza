@@ -39,7 +39,7 @@ namespace Petiza.Catalogo.Api.Controllers
 
         // POST: api/Animal
         [HttpPost]
-        public void CadastrarAnimal([FromBody] string title)
+        public void CadastrarAnimal([FromBody] Teste title)
         {
             Ok();
         }
@@ -59,6 +59,10 @@ namespace Petiza.Catalogo.Api.Controllers
         public class Animaizinhos
         {
             public string imageUrl { get; set; }
+        }
+        public class Teste
+        {
+            public string title { get; set; }
         }
     }
 }

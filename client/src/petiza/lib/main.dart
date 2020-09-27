@@ -3,6 +3,7 @@ import 'package:flutter_tindercard/flutter_tindercard.dart';
 import 'package:http/http.dart' as http;
 import 'dart:async';
 import 'dart:convert';
+import 'package:dio/dio.dart';
 
 class API {
   static Future getAnimais() {
@@ -10,7 +11,8 @@ class API {
   }
 
   static Future postAnimal() {
-    return http.post('http://10.0.2.2:5001/api/Animal');
+    Map data = {"title": "teste"};
+    return Dio().post('http://10.0.2.2:5001/api/Animal', data: data);
   }
 }
 
@@ -98,11 +100,13 @@ class _ExampleHomePageState extends State<ExampleHomePage>
                 //Card is LEFT swiping
               } else if (align.x > 0) {
                 //Card is RIGHT swiping
-                API.postAnimal();
+
               }
             },
             swipeCompleteCallback:
                 (CardSwipeOrientation orientation, int index) {
+              API.postAnimal();
+
               /// Get orientation & index of swiped card!
             },
           ),
