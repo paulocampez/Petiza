@@ -4,25 +4,18 @@ import 'package:http/http.dart' as http;
 import 'dart:async';
 import 'dart:convert';
 import 'package:dio/dio.dart';
+import 'package:petiza/settings.dart';
+import 'package:petiza/models/animais.model.dart';
+import 'package:petiza/models/client.model.dart';
 
 class API {
   static Future getAnimais() {
-    return http.get('http://10.0.2.2:5001/api/Animal');
+    return http.get(Settings.apiUrl + 'api/Animal');
   }
 
-  static Future postAnimal() {
-    Map data = {"title": "teste"};
-    return Dio().post('http://10.0.2.2:5001/api/Animal', data: data);
-  }
-}
-
-class Animaizinhos {
-  final String imageUrl;
-
-  Animaizinhos({this.imageUrl});
-
-  factory Animaizinhos.fromJson(Map<String, dynamic> json) {
-    return Animaizinhos(imageUrl: json['imageUrl']);
+  static Future postAnimal(Animal animal) {
+    Cliente cliente = new Cliente(animal: animal, token: '123456');
+    return Dio().post(Settings.apiUrl + 'api/Animal', data: cliente);
   }
 }
 
@@ -49,15 +42,13 @@ class ExampleHomePage extends StatefulWidget {
 
 class _ExampleHomePageState extends State<ExampleHomePage>
     with TickerProviderStateMixin {
-  List<String> welcomeImages = ["images/welcome1.png", "images/welcome2.png"];
-  var listAnimais = new List<Animaizinhos>();
+  var listAnimais = new List<Animal>();
 
   _getAnimais() {
     API.getAnimais().then((response) {
       setState(() {
         Iterable list = json.decode(response.body);
-        listAnimais =
-            list.map((model) => Animaizinhos.fromJson(model)).toList();
+        listAnimais = list.map((model) => Animal.fromJson(model)).toList();
       });
     });
   }
@@ -105,7 +96,7 @@ class _ExampleHomePageState extends State<ExampleHomePage>
             },
             swipeCompleteCallback:
                 (CardSwipeOrientation orientation, int index) {
-              API.postAnimal();
+              API.postAnimal(listAnimais[index]);
 
               /// Get orientation & index of swiped card!
             },
