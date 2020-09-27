@@ -39,7 +39,7 @@ namespace Petiza.Catalogo.Api.Controllers
 
         // POST: api/Animal
         [HttpPost]
-        public void CadastrarAnimal([FromBody] AnimalViewModel animalVM)
+        public void CadastrarAnimal([FromBody] string title)
         {
             Ok();
         }

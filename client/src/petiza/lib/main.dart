@@ -6,21 +6,11 @@ import 'dart:convert';
 
 class API {
   static Future getAnimais() {
-    return http.get('http://10.0.2.2:5042/api/Animal');
+    return http.get('http://10.0.2.2:5001/api/Animal');
   }
-}
 
-Future<Animaizinhos> fetchAnimaizinhos() async {
-  final response = await http.get('https://10.0.2.2:5042/api/Animal');
-
-  if (response.statusCode == 200) {
-    // If the server did return a 200 OK response,
-    // then parse the JSON.
-    return Animaizinhos.fromJson(json.decode(response.body));
-  } else {
-    // If the server did not return a 200 OK response,
-    // then throw an exception.
-    throw Exception('Failed to load Animaizinhos');
+  static Future postAnimal() {
+    return http.post('http://10.0.2.2:5001/api/Animal');
   }
 }
 
@@ -41,9 +31,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Petiza',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.green,
       ),
       home: ExampleHomePage(),
     );
@@ -108,6 +98,7 @@ class _ExampleHomePageState extends State<ExampleHomePage>
                 //Card is LEFT swiping
               } else if (align.x > 0) {
                 //Card is RIGHT swiping
+                API.postAnimal();
               }
             },
             swipeCompleteCallback:

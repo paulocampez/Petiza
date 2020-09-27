@@ -84,3 +84,4 @@
 2020-09-27 00:24:19.78 spid51      Using 'xplog70.dll' version '2017.140.3048' to execute extended stored procedure 'xp_msver'. This is an informational message only; no user action is required.
 2020-09-27 00:24:20.12 spid54      Attempting to load library 'xpsqlbot.dll' into memory. This is an informational message only. No user action is required.
 2020-09-27 00:24:20.17 spid54      Using 'xpsqlbot.dll' version '2017.140.3048' to execute extended stored procedure 'xp_qv'. This is an informational message only; no user action is required.
+2020-09-27 00:27:53.10 spid51      Using 'dbghelp.dll' version '4.0.5'
