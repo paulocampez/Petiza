@@ -1,4 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Hosting;
 using Petiza.Catalogo.Domain;
 using Petiza.Core.Data;
 using System;
@@ -11,18 +13,34 @@ namespace Petiza.Catalogo.Data
 {
     public class CatalogoContext : DbContext, IUnitOfWork
     {
-        public CatalogoContext(DbContextOptions<CatalogoContext> options) : base(options)
-        {
+        public CatalogoContext(DbContextOptions<CatalogoContext> options) 
+            : base(options){ }
 
+        private readonly IHostEnvironment _env;
+
+        public CatalogoContext()
+        {
+            //_env = env;
         }
+
         public DbSet<Animal> Produtos { get; set; }
         public DbSet<Categoria> Categorias { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.ApplyConfigurationsFromAssembly(typeof(CatalogoContext).Assembly);
+            base.OnModelCreating(modelBuilder);
         }
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            // get the configuration from the app settings
+            var config = new ConfigurationBuilder()
+                //.SetBasePath(_env.ContentRootPath)
+                .AddJsonFile("appsettings.json")
+                .Build();
 
+            // definir db
+            optionsBuilder.UseSqlServer(config.GetConnectionString("DefaultConnection"));
+        }
         public async Task<bool> Commit()
         {
             foreach (var entry in ChangeTracker.Entries().Where(entry => entry.Entity.GetType().GetProperty("DataCadastro") != null))

@@ -34,6 +34,9 @@
             "projectReferences": {
               "D:\\Petiza\\Petiza\\server\\Petiza\\src\\Petiza.Catalogo.Application\\Petiza.Catalogo.Application.csproj": {
                 "projectPath": "D:\\Petiza\\Petiza\\server\\Petiza\\src\\Petiza.Catalogo.Application\\Petiza.Catalogo.Application.csproj"
+              },
+              "D:\\Petiza\\Petiza\\server\\Petiza\\src\\Petiza.Catalogo.Data\\Petiza.Catalogo.Data.csproj": {
+                "projectPath": "D:\\Petiza\\Petiza\\server\\Petiza\\src\\Petiza.Catalogo.Data\\Petiza.Catalogo.Data.csproj"
               }
             }
           }
@@ -50,6 +53,12 @@
             "AutoMapper.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
               "version": "[8.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.8, )"
             },
             "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
               "target": "Package",
@@ -132,6 +141,93 @@
             "AutoMapper": {
               "target": "Package",
               "version": "[10.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Petiza\\Petiza\\server\\Petiza\\src\\Petiza.Catalogo.Data\\Petiza.Catalogo.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Petiza\\Petiza\\server\\Petiza\\src\\Petiza.Catalogo.Data\\Petiza.Catalogo.Data.csproj",
+        "projectName": "Petiza.Catalogo.Data",
+        "projectPath": "D:\\Petiza\\Petiza\\server\\Petiza\\src\\Petiza.Catalogo.Data\\Petiza.Catalogo.Data.csproj",
+        "packagesPath": "C:\\Users\\PauloCampez\\.nuget\\packages\\",
+        "outputPath": "D:\\Petiza\\Petiza\\server\\Petiza\\src\\Petiza.Catalogo.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\PauloCampez\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "D:\\Petiza\\Petiza\\server\\Petiza\\src\\Petiza.Catalogo.Domain\\Petiza.Catalogo.Domain.csproj": {
+                "projectPath": "D:\\Petiza\\Petiza\\server\\Petiza\\src\\Petiza.Catalogo.Domain\\Petiza.Catalogo.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.8, )"
+            },
+            "Microsoft.Extensions.Hosting": {
+              "target": "Package",
+              "version": "[3.1.8, )"
             }
           },
           "imports": [
