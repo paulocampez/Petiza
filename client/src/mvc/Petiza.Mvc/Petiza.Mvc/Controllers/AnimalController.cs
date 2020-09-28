@@ -46,28 +46,16 @@ namespace Petiza.Mvc.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Create(IFormCollection collection)
         {
-            var model = new AnimalViewModel() { Ativo = true, CategoriaId = Guid.NewGuid(), Categoria = new CategoriaViewModel() { Codigo = 1, Nome = "Cachorro" }, DataCadastro = DateTime.Now, Descricao = collection["Descricao"], Imagem = collection["Imagem"], Nome = collection["Nome"], QuantidadeEstoque = int.Parse(collection["QuantidadeEstoque"]) };
+            var model = new AnimalViewModel() { Ativo = true, CategoriaId = Guid.Parse("4ee35607-2d8d-4e45-a21d-167ff918ee74"), Categoria = new CategoriaViewModel() { Codigo = 1, Nome = "Cachorro" }
+            , DataCadastro = DateTime.Now,
+              Descricao = collection["Descricao"],
+              Imagem = collection["Imagem"],
+              Nome = collection["Nome"],
+              QuantidadeEstoque = int.Parse(collection["QuantidadeEstoque"]) };
             var imageModel = new ImageModel()
             {
-                ImageName = collection.Files.Select(p => p.FileName).First(),
-                Title = "asdas",
-                ImageId = 1,
                 ImageFile = collection.Files.First()
             };
-            #region imagem
-            try
-            {
-                string wwwRootPath = _hostEnvironment.WebRootPath;
-                string fileName = Path.GetFileNameWithoutExtension(imageModel.ImageFile.FileName);
-                string extension = Path.GetExtension(imageModel.ImageFile.FileName);
-                imageModel.ImageName = fileName = fileName + DateTime.Now.ToString("yymmssfff") + extension;
-            }
-            catch (Exception ex)
-            {
-
-                throw;
-            }
-            #endregion
 
             try
             {
@@ -84,13 +72,12 @@ namespace Petiza.Mvc.Controllers
                             string s = Convert.ToBase64String(fileBytes);
                             // act on the Base64 data
                             form.Add(new ByteArrayContent(fileBytes, 0, fileBytes.Count()), "File", "foo.jpg");
-                            form.Add(new StringContent("Tom"), "Imagem");
-                            form.Add(new StringContent("Tom"), "Descricao");
-                            form.Add(new StringContent("Tom"), "Nome");
+                            form.Add(new StringContent(collection["Imagem"]), "Imagem");
+                            form.Add(new StringContent(collection["Descricao"]), "Descricao");
+                            form.Add(new StringContent(collection["Nome"]), "Nome");
 
                         }
                     }
-                    
 
                     string baseUrl = "http://localhost:5001";
                     client.BaseAddress = new Uri(baseUrl);

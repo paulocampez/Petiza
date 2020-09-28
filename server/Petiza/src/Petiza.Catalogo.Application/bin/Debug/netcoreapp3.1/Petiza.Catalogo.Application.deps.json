@@ -9,6 +9,7 @@
       "Petiza.Catalogo.Application/1.0.0": {
         "dependencies": {
           "AutoMapper": "10.0.0",
+          "Bogus": "31.0.2",
           "Microsoft.AspNetCore.Http.Features": "3.1.8",
           "Petiza.Catalogo.Domain": "1.0.0"
         },
@@ -25,6 +26,14 @@
           "lib/netstandard2.0/AutoMapper.dll": {
             "assemblyVersion": "10.0.0.0",
             "fileVersion": "10.0.0.0"
+          }
+        }
+      },
+      "Bogus/31.0.2": {
+        "runtime": {
+          "lib/netstandard2.0/Bogus.dll": {
+            "assemblyVersion": "31.0.2.0",
+            "fileVersion": "31.0.2.0"
           }
         }
       },
@@ -85,6 +94,13 @@
       "sha512": "sha512-T09NoqMZBqw0/JEauXulxnmmerl0Zj03e0r6VCcJ0LURWBIaYxZPPoiDv8bHf5Y4x2xcXJp4JPXoCaeOMJfHEA==",
       "path": "automapper/10.0.0",
       "hashPath": "automapper.10.0.0.nupkg.sha512"
+    },
+    "Bogus/31.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Ij7z2K40b6NV7LarcNuGFH11qrf5r98Eka4roA+16JB9KQIb3yhgjH2ojt1YhJFbAR7kubBU9rj+CooYYBsecg==",
+      "path": "bogus/31.0.2",
+      "hashPath": "bogus.31.0.2.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Http.Features/3.1.8": {
       "type": "package",

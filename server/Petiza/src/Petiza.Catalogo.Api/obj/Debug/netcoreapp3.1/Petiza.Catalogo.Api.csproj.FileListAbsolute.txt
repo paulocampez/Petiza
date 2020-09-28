@@ -163,3 +163,4 @@ D:\Petiza\Petiza\server\Petiza\src\Petiza.Catalogo.Api\bin\Debug\netcoreapp3.1\M
 D:\Petiza\Petiza\server\Petiza\src\Petiza.Catalogo.Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.ConfigurationExtensions.dll
 D:\Petiza\Petiza\server\Petiza\src\Petiza.Catalogo.Api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Http.Features.dll
 D:\Petiza\Petiza\server\Petiza\src\Petiza.Catalogo.Api\bin\Debug\netcoreapp3.1\System.IO.Pipelines.dll
+D:\Petiza\Petiza\server\Petiza\src\Petiza.Catalogo.Api\bin\Debug\netcoreapp3.1\Bogus.dll
