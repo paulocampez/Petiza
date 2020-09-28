@@ -49,8 +49,7 @@ namespace Petiza.Catalogo.Api.Controllers
         public void CadastrarAnimal([FromForm] AnimalViewModel animalVM)
         {
             var content = Request.ContentType;
-            //animalApplicationService.AdicionarAnimal(animalVM)
-            Ok();
+            Ok(_animalApplicationService.AdicionarAnimal(animalVM));
         }
 
         // PUT: api/Animal/5

@@ -9,21 +9,21 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Catalogo", "Catalogo", "{5F
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{95ABCFDF-5453-4FCD-9264-7865B15860E7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Petiza.Catalogo.Application", "src\Petiza.Catalogo.Application\Petiza.Catalogo.Application.csproj", "{A8021199-6DBD-4ACD-B105-00FF62D4A0C2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Petiza.Catalogo.Application", "src\Petiza.Catalogo.Application\Petiza.Catalogo.Application.csproj", "{A8021199-6DBD-4ACD-B105-00FF62D4A0C2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Petiza.Catalogo.Data", "src\Petiza.Catalogo.Data\Petiza.Catalogo.Data.csproj", "{9CA8B64C-64F3-4A8C-BC83-25108A5B51B9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Petiza.Catalogo.Data", "src\Petiza.Catalogo.Data\Petiza.Catalogo.Data.csproj", "{9CA8B64C-64F3-4A8C-BC83-25108A5B51B9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Petiza.Catalogo.Domain", "src\Petiza.Catalogo.Domain\Petiza.Catalogo.Domain.csproj", "{504A2F6E-90D9-460B-969C-03A3B41A620B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Petiza.Catalogo.Domain", "src\Petiza.Catalogo.Domain\Petiza.Catalogo.Domain.csproj", "{504A2F6E-90D9-460B-969C-03A3B41A620B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{CEF1D017-4A13-49F0-BF54-CB7202C7E869}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Petiza.Core", "src\Petiza.Core\Petiza.Core.csproj", "{56E26280-7D35-4B64-84C9-0F256DDC108E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Petiza.Core", "src\Petiza.Core\Petiza.Core.csproj", "{56E26280-7D35-4B64-84C9-0F256DDC108E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Petiza.Catalogo.Domain.Tests", "src\Petiza.Catalogo.Domain.Tests\Petiza.Catalogo.Domain.Tests.csproj", "{B4E5F4BC-55E1-4BBF-B4A5-6304A27EFB74}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Petiza.Catalogo.Domain.Tests", "src\Petiza.Catalogo.Domain.Tests\Petiza.Catalogo.Domain.Tests.csproj", "{B4E5F4BC-55E1-4BBF-B4A5-6304A27EFB74}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{71227A15-047B-48FD-A931-A07232FD6577}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Petiza.Catalogo.Api", "src\Petiza.Catalogo.Api\Petiza.Catalogo.Api.csproj", "{65A87CB8-94EF-4DD2-BD70-D87CE035A4C7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Petiza.Catalogo.Api", "src\Petiza.Catalogo.Api\Petiza.Catalogo.Api.csproj", "{65A87CB8-94EF-4DD2-BD70-D87CE035A4C7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

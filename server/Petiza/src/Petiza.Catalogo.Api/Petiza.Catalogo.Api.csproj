@@ -23,5 +23,9 @@
     <ProjectReference Include="..\Petiza.Catalogo.Data\Petiza.Catalogo.Data.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Resources\Images\" />
+  </ItemGroup>
+
 
 </Project>
