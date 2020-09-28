@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Petiza.Catalogo.Data;
 
 namespace Petiza.Catalogo.Data.Migrations
 {
     [DbContext(typeof(CatalogoContext))]
-    partial class CatalogoContextModelSnapshot : ModelSnapshot
+    [Migration("20200928184734_alteradonome")]
+    partial class alteradonome
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

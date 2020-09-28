@@ -23,7 +23,7 @@ namespace Petiza.Catalogo.Data
             //_env = env;
         }
 
-        public DbSet<Animal> Produtos { get; set; }
+        public DbSet<Animal> Animals { get; set; }
         public DbSet<Categoria> Categorias { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

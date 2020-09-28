@@ -31,7 +31,8 @@ namespace Petiza.Catalogo.Application.Services
         public async Task AdicionarAnimal(AnimalViewModel AnimalViewModel)
         {
             AnimalViewModel.Imagem = SetarUrlImagem(AnimalViewModel);
-
+            AnimalViewModel.CategoriaId = Guid.Parse("4ee35607-2d8d-4e45-a21d-167ff918ee74");
+            //AnimalViewModel.Categorias = new Categoria("Cachorro", 1) { Id = Guid.Parse("4ee35607-2d8d-4e45-a21d-167ff918ee74") };
             AdicionarImagem(AnimalViewModel.File);
 
             var Animal = _mapper.Map<Animal>(AnimalViewModel);

@@ -24,7 +24,7 @@ namespace Petiza.Catalogo.Api.Controllers
         {
             List<Animaizinhos> animais = new List<Animaizinhos>();
             Animaizinhos animal1 = new Animaizinhos() { imageUrl = "images/welcome1.png" };
-            Animaizinhos animal2 = new Animaizinhos() { imageUrl = "images/welcome2.png" };
+            Animaizinhos animal2 = new Animaizinhos() { imageUrl = "http://10.0.2.2:5001/Resources/Images/foo.jpeg" };
             animais.Add(animal1);
             animais.Add(animal2);
             return animais;

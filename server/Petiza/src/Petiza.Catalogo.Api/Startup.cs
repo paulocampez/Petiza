@@ -9,6 +9,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.FileProviders;
@@ -16,6 +17,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Petiza.Catalogo.Api.Configuration;
 using Petiza.Catalogo.Application.Services;
+using Petiza.Catalogo.Data;
 using Petiza.Catalogo.Data.Repository;
 using Petiza.Catalogo.Domain;
 
@@ -41,7 +43,8 @@ namespace Petiza.Catalogo.Api
 
             services.AddScoped<IAnimalApplicationService, AnimalApplicationService>();
             services.AddScoped<IAnimalRepository, AnimalRepository>();
-            
+            services.AddDbContext<CatalogoContext>(options =>
+                options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

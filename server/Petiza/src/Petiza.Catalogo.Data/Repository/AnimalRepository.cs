@@ -9,11 +9,16 @@ namespace Petiza.Catalogo.Data.Repository
 {
     public class AnimalRepository : IAnimalRepository
     {
-        public IUnitOfWork UnitOfWork => throw new NotImplementedException();
+        private readonly CatalogoContext _context;
+        public AnimalRepository(CatalogoContext context)
+        {
+            _context = context;
+        }
+        public IUnitOfWork UnitOfWork => _context;
 
         public void Adicionar(Animal Animal)
         {
-            throw new NotImplementedException();
+            _context.Animals.Add(Animal);
         }
 
         public void Adicionar(Categoria categoria)
@@ -23,7 +28,7 @@ namespace Petiza.Catalogo.Data.Repository
 
         public void Atualizar(Animal Animal)
         {
-            throw new NotImplementedException();
+            _context.Animals.Add(Animal);
         }
 
         public void Atualizar(Categoria categoria)
@@ -33,7 +38,7 @@ namespace Petiza.Catalogo.Data.Repository
 
         public void Dispose()
         {
-            throw new NotImplementedException();
+            GC.SuppressFinalize(this);
         }
 
         public Task<IEnumerable<Categoria>> ObterCategorias()
