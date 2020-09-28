@@ -70,5 +70,10 @@ namespace Petiza.Catalogo.Application.Services
             {
             }
         }
+
+        public async Task<IEnumerable<AnimalViewModel>> ObterTodos()
+        {
+            return _mapper.Map<IEnumerable<AnimalViewModel>>(await _animalRepository.ObterTodos());
+        }
     }
 }

@@ -45,6 +45,13 @@ namespace Petiza.Catalogo.Api.Controllers
         }
 
         [HttpPost]
+        [Route("ObterTodos")]
+        public async Task<IActionResult> ObterTodos()
+        {
+            return Ok(await _animalApplicationService.ObterTodos());
+        }
+
+        [HttpPost]
         [Route("cadastrar")]
         public void CadastrarAnimal([FromForm] AnimalViewModel animalVM)
         {

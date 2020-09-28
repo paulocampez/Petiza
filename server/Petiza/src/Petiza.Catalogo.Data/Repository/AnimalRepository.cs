@@ -1,4 +1,5 @@
-﻿using Petiza.Catalogo.Domain;
+﻿using Microsoft.EntityFrameworkCore;
+using Petiza.Catalogo.Domain;
 using Petiza.Core.Data;
 using System;
 using System.Collections.Generic;
@@ -56,9 +57,9 @@ namespace Petiza.Catalogo.Data.Repository
             throw new NotImplementedException();
         }
 
-        public Task<IEnumerable<Animal>> ObterTodos()
+        public async Task<IEnumerable<Animal>> ObterTodos()
         {
-            throw new NotImplementedException();
+            return await _context.Animals.AsNoTracking().ToListAsync();
         }
     }
 }

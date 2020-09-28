@@ -9,5 +9,7 @@ namespace Petiza.Catalogo.Application.Services
     public interface IAnimalApplicationService : IDisposable
     {
         Task AdicionarAnimal(AnimalViewModel animalViewModel);
+
+        Task<IEnumerable<AnimalViewModel>> ObterTodos();
     }
 }
