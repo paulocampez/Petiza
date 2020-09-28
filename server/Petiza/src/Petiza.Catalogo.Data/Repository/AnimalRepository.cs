@@ -1,4 +1,5 @@
 ﻿using Petiza.Catalogo.Domain;
+using Petiza.Core.Data;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -8,6 +9,8 @@ namespace Petiza.Catalogo.Data.Repository
 {
     public class AnimalRepository : IAnimalRepository
     {
+        public IUnitOfWork UnitOfWork => throw new NotImplementedException();
+
         public void Adicionar(Animal Animal)
         {
             throw new NotImplementedException();
@@ -24,6 +27,11 @@ namespace Petiza.Catalogo.Data.Repository
         }
 
         public void Atualizar(Categoria categoria)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Dispose()
         {
             throw new NotImplementedException();
         }

@@ -83,6 +83,7 @@ class _ExampleHomePageState extends State<ExampleHomePage>
             minHeight: MediaQuery.of(context).size.width * 0.8,
             cardBuilder: (context, index) => Card(
               child: Image.asset('${listAnimais[index].imageUrl}'),
+              // child: Image.network('${listAnimais[index].imageUrl}'),
             ),
             cardController: controller = CardController(),
             swipeUpdateCallback: (DragUpdateDetails details, Alignment align) {

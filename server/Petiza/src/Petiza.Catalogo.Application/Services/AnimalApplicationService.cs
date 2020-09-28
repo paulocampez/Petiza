@@ -10,12 +10,12 @@ namespace Petiza.Catalogo.Application.Services
 {
     public class AnimalApplicationService : IAnimalApplicationService
     {
-        private readonly IMapper _mapper;
-        private readonly IAnimalRepository _animalRepository;
-        public AnimalApplicationService(IMapper mapper, IAnimalRepository animalRepository)
+        //private readonly IMapper _mapper;
+
+        public AnimalApplicationService()
         {
-            _mapper = mapper;
-            _animalRepository = animalRepository;
+            //_mapper = mapper;
+            
         }
         public void Dispose()
         {
@@ -27,12 +27,6 @@ namespace Petiza.Catalogo.Application.Services
 
         }
 
-        public async Task AdicionarAnimal(AnimalViewModel AnimalViewModel)
-        {
-            var Animal = _mapper.Map<Animal>(AnimalViewModel);
-            _animalRepository.Adicionar(Animal);
-
-            await _animalRepository.UnitOfWork.Commit();
-        }
+    
     }
 }

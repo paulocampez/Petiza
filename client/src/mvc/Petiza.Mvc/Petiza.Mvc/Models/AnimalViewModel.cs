@@ -16,5 +16,7 @@ namespace Petiza.Mvc.Models
         public int QuantidadeEstoque { get; set; }
         public CategoriaViewModel Categoria { get; set; }
 
+        public ImageModel Image { get; set; }
+
     }
 }

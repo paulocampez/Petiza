@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Net.Http;
 using System.Net.Http.Formatting;
 using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
@@ -15,6 +17,12 @@ namespace Petiza.Mvc.Controllers
 {
     public class AnimalController : Controller
     {
+        private readonly IWebHostEnvironment _hostEnvironment;
+        public AnimalController(IWebHostEnvironment hostEnvironment)
+        {
+
+        this._hostEnvironment = hostEnvironment;
+        }
         // GET: Animal
         public ActionResult Index()
         {
@@ -39,17 +47,55 @@ namespace Petiza.Mvc.Controllers
         public ActionResult Create(IFormCollection collection)
         {
             var model = new AnimalViewModel() { Ativo = true, CategoriaId = Guid.NewGuid(), Categoria = new CategoriaViewModel() { Codigo = 1, Nome = "Cachorro" }, DataCadastro = DateTime.Now, Descricao = collection["Descricao"], Imagem = collection["Imagem"], Nome = collection["Nome"], QuantidadeEstoque = int.Parse(collection["QuantidadeEstoque"]) };
-            //var model = new AnimalViewModel() { Ativo = true, Categoria = new CategoriaViewModel() { Codigo = 1, Nome = "Cachorro" }, CategoriaId = Guid.NewGuid(), DataCadastro = DateTime.Now, Descricao = "Teste", Imagem = "Imagem", QuantidadeEstoque = 1, Nome = "Toby" };
-            //var vm = collection as AnimalViewModel;
+            var imageModel = new ImageModel()
+            {
+                ImageName = collection.Files.Select(p => p.FileName).First(),
+                Title = "asdas",
+                ImageId = 1,
+                ImageFile = collection.Files.First()
+            };
+            #region imagem
+            try
+            {
+                string wwwRootPath = _hostEnvironment.WebRootPath;
+                string fileName = Path.GetFileNameWithoutExtension(imageModel.ImageFile.FileName);
+                string extension = Path.GetExtension(imageModel.ImageFile.FileName);
+                imageModel.ImageName = fileName = fileName + DateTime.Now.ToString("yymmssfff") + extension;
+            }
+            catch (Exception ex)
+            {
+
+                throw;
+            }
+            #endregion
+
             try
             {
                 using (var client = new HttpClient())
                 {
+
+                    MultipartFormDataContent form = new MultipartFormDataContent();
+                    if (imageModel.ImageFile.Length > 0)
+                    {
+                        using (var ms = new MemoryStream())
+                        {
+                            imageModel.ImageFile.CopyTo(ms);
+                            var fileBytes = ms.ToArray();
+                            string s = Convert.ToBase64String(fileBytes);
+                            // act on the Base64 data
+                            form.Add(new ByteArrayContent(fileBytes, 0, fileBytes.Count()), "File", "foo.jpg");
+                            form.Add(new StringContent("Tom"), "Imagem");
+                            form.Add(new StringContent("Tom"), "Descricao");
+                            form.Add(new StringContent("Tom"), "Nome");
+
+                        }
+                    }
+                    
+
                     string baseUrl = "http://localhost:5001";
                     client.BaseAddress = new Uri(baseUrl);
                     int result = client.PostAsync("/api/Animal/cadastrar",
-                                                  model,
-                                                  new JsonMediaTypeFormatter())
+                                                  form)
                                         .Result
                                         .Content
                                         .ReadAsAsync<int>()
