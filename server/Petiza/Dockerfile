@@ -1,8 +1,8 @@
 FROM mcr.microsoft.com/dotnet/core/aspnet:3.1 AS base
 WORKDIR /app
 EXPOSE 80
-
-ENV mongoConnection__server ""
+ADD start.sh /start.sh
+CMD ["/start.sh"]
 
 FROM mcr.microsoft.com/dotnet/core/sdk:3.1 AS build
 WORKDIR /src

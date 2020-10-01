@@ -9,3 +9,13 @@ D:\Petiza\Petiza\server\Petiza\src\Petiza.Core\obj\Debug\netcoreapp3.1\Petiza.Co
 D:\Petiza\Petiza\server\Petiza\src\Petiza.Core\obj\Debug\netcoreapp3.1\Petiza.Core.AssemblyInfo.cs
 D:\Petiza\Petiza\server\Petiza\src\Petiza.Core\obj\Debug\netcoreapp3.1\Petiza.Core.dll
 D:\Petiza\Petiza\server\Petiza\src\Petiza.Core\obj\Debug\netcoreapp3.1\Petiza.Core.pdb
+D:\Petiza\Petiza\server\Petiza\src\Petiza.Core\obj\Debug\netcoreapp3.1\Petiza.Core.genruntimeconfig.cache
+D:\Petiza\Petiza\server\Petiza\src\Petiza.Core\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\Petiza\Petiza\server\Petiza\src\Petiza.Core\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Petiza\Petiza\server\Petiza\src\Petiza.Core\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Abstractions.dll
+D:\Petiza\Petiza\server\Petiza\src\Petiza.Core\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Hosting.Abstractions.dll
+D:\Petiza\Petiza\server\Petiza\src\Petiza.Core\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Petiza\Petiza\server\Petiza\src\Petiza.Core\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+D:\Petiza\Petiza\server\Petiza\src\Petiza.Core\obj\Debug\netcoreapp3.1\Petiza.Core.csproj.CopyComplete
+D:\Petiza\Petiza\server\Petiza\src\Petiza.Core\bin\Debug\netcoreapp3.1\Polly.dll
+D:\Petiza\Petiza\server\Petiza\src\Petiza.Core\obj\Debug\netcoreapp3.1\Petiza.Core.csproj.CoreCompileInputs.cache

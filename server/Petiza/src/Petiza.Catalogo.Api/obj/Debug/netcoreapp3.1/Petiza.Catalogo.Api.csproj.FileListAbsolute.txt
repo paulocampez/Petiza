@@ -143,8 +143,6 @@ D:\Petiza\Petiza\server\Petiza\src\Petiza.Catalogo.Api\bin\Debug\netcoreapp3.1\r
 D:\Petiza\Petiza\server\Petiza\src\Petiza.Catalogo.Api\bin\Debug\netcoreapp3.1\Petiza.Catalogo.Data.dll
 D:\Petiza\Petiza\server\Petiza\src\Petiza.Catalogo.Api\bin\Debug\netcoreapp3.1\Petiza.Catalogo.Data.pdb
 D:\Petiza\Petiza\server\Petiza\src\Petiza.Catalogo.Api\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
-D:\Petiza\Petiza\server\Petiza\src\Petiza.Catalogo.Api\obj\Debug\netcoreapp3.1\Petiza.Catalogo.Api.MvcApplicationPartsAssemblyInfo.cs
-D:\Petiza\Petiza\server\Petiza\src\Petiza.Catalogo.Api\obj\Debug\netcoreapp3.1\Petiza.Catalogo.Api.MvcApplicationPartsAssemblyInfo.cache
 D:\Petiza\Petiza\server\Petiza\src\Petiza.Catalogo.Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.CommandLine.dll
 D:\Petiza\Petiza\server\Petiza\src\Petiza.Catalogo.Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.EnvironmentVariables.dll
 D:\Petiza\Petiza\server\Petiza\src\Petiza.Catalogo.Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.FileExtensions.dll
@@ -164,3 +162,10 @@ D:\Petiza\Petiza\server\Petiza\src\Petiza.Catalogo.Api\bin\Debug\netcoreapp3.1\M
 D:\Petiza\Petiza\server\Petiza\src\Petiza.Catalogo.Api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Http.Features.dll
 D:\Petiza\Petiza\server\Petiza\src\Petiza.Catalogo.Api\bin\Debug\netcoreapp3.1\System.IO.Pipelines.dll
 D:\Petiza\Petiza\server\Petiza\src\Petiza.Catalogo.Api\bin\Debug\netcoreapp3.1\Bogus.dll
+D:\Petiza\Petiza\server\Petiza\src\Petiza.Catalogo.Api\bin\Debug\netcoreapp3.1\Polly.dll
+D:\Petiza\Petiza\server\Petiza\src\Petiza.Catalogo.Api\obj\Debug\netcoreapp3.1\Petiza.Catalogo.Api.genruntimeconfig.cache
+D:\Petiza\Petiza\server\Petiza\src\Petiza.Catalogo.Api\obj\Debug\netcoreapp3.1\Petiza.Catalogo.Api.csproj.CoreCompileInputs.cache
+D:\Petiza\Petiza\server\Petiza\src\Petiza.Catalogo.Api\obj\Debug\netcoreapp3.1\Petiza.Catalogo.Api.MvcApplicationPartsAssemblyInfo.cs
+D:\Petiza\Petiza\server\Petiza\src\Petiza.Catalogo.Api\obj\Debug\netcoreapp3.1\Petiza.Catalogo.Api.MvcApplicationPartsAssemblyInfo.cache
+D:\Petiza\Petiza\server\Petiza\src\Petiza.Catalogo.Api\bin\Debug\netcoreapp3.1\AWSSDK.Core.dll
+D:\Petiza\Petiza\server\Petiza\src\Petiza.Catalogo.Api\bin\Debug\netcoreapp3.1\AWSSDK.S3.dll

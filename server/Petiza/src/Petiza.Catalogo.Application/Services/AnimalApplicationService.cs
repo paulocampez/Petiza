@@ -6,6 +6,12 @@ using System.Text;
 using System.Threading.Tasks;
 using Petiza.Catalogo.Domain;
 using System.IO;
+using System.Net.Http.Headers;
+using Amazon;
+using Amazon.Internal;
+using Amazon.Runtime;
+using Amazon.S3;
+using Amazon.S3.Transfer;
 using Bogus;
 
 namespace Petiza.Catalogo.Application.Services
@@ -14,6 +20,13 @@ namespace Petiza.Catalogo.Application.Services
     {
         private readonly IMapper _mapper;
         private readonly IAnimalRepository _animalRepository;
+
+        private const string bucketName = "paulocampez";
+        //private const string keyName = "*** provide a name for the uploaded object ***";
+        //private const string filePath = "*** provide the full path name of the file to upload ***";
+        // Specify your bucket region (an example region is shown).
+        private static readonly RegionEndpoint bucketRegion = RegionEndpoint.SAEast1;
+        private IAmazonS3 s3Client;
         public AnimalApplicationService(IMapper mapper, IAnimalRepository animalRepository)
         {
             _mapper = mapper;
@@ -45,10 +58,10 @@ namespace Petiza.Catalogo.Application.Services
         private string SetarUrlImagem(AnimalViewModel animalVM)
         {
             Random rnd = new Random();
-            
+
             var faker = new Faker("pt_BR");
-            var teste = RemoveSpecialCharacters(faker.Random.Words(rnd.Next(4, 7)).Trim());
-            var name = teste + Path.GetExtension(animalVM.File.FileName);
+            var nomeId = RemoveSpecialCharacters(faker.Random.Words(rnd.Next(4, 7)).Trim());
+            var name = nomeId + Path.GetExtension(animalVM.File.FileName);
             return name;
         }
         string RemoveSpecialCharacters(string str)
@@ -63,24 +76,67 @@ namespace Petiza.Catalogo.Application.Services
             }
             return sb.ToString();
         }
+
         private void AdicionarImagem(Microsoft.AspNetCore.Http.IFormFile file, string fileName)
         {
-            try
+            if (true)
             {
-                var folderName = Path.Combine("Resources", "Images");
-                var pathToSave = Path.Combine(Directory.GetCurrentDirectory(), folderName);
-                if (file.Length > 0)
+                #region amazonUploads3
+
+                try
                 {
-                    var fullPath = Path.Combine(pathToSave, fileName);
-                    var dbPath = Path.Combine(folderName, fileName);
-                    using (var stream = new FileStream(fullPath, FileMode.Create))
+                    AWSCredentials credentials = new BasicAWSCredentials("", "");
+                    s3Client = new AmazonS3Client(credentials, bucketRegion);
+
+                    var fileTransferUtility =
+                        new TransferUtility(s3Client);
+
+                    using (Stream fileToUpload = file.OpenReadStream())
                     {
-                        file.CopyTo(stream);
+                        var fileTransferUtilityRequest = new TransferUtilityUploadRequest
+                        {
+                            BucketName = bucketName,
+                            StorageClass = S3StorageClass.StandardInfrequentAccess,
+                            Key = fileName,
+                            CannedACL = S3CannedACL.PublicRead,
+                            InputStream = fileToUpload
+                        };
+
+                        fileTransferUtility.Upload(fileTransferUtilityRequest);
+                    }
+
+                }
+                catch (Exception exception)
+                {
+                    Console.WriteLine(exception);
+                    throw;
+                }
+
+                #endregion
+            }
+
+            if (false)
+            {
+                try
+
+                {
+                    var folderName = Path.Combine("Resources", "Images");
+                    var pathToSave = Path.Combine(Directory.GetCurrentDirectory(), folderName);
+                    Console.WriteLine("CAMINHO: " + pathToSave);
+                    if (file.Length > 0)
+                    {
+                        var fullPath = Path.Combine(pathToSave, fileName);
+                        var dbPath = Path.Combine(folderName, fileName);
+                        using (var stream = new FileStream(fullPath, FileMode.Create))
+                        {
+                            file.CopyTo(stream);
+                        }
                     }
                 }
-            }
-            catch (Exception ex)
-            {
+                catch (Exception ex)
+                {
+                    Console.WriteLine("ERRO:" + ex.InnerException);
+                }
             }
         }
 

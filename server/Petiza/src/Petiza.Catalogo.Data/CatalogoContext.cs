@@ -28,6 +28,12 @@ namespace Petiza.Catalogo.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<Categoria>().HasData(
+                new Categoria("Cachorro", 1)
+                {
+                    Id = Guid.Parse("4ee35607-2d8d-4e45-a21d-167ff918ee74")
+                }
+            );
             base.OnModelCreating(modelBuilder);
         }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)

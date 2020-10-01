@@ -92,3 +92,5 @@ D:\Petiza\Petiza\server\Petiza\src\Petiza.Catalogo.Domain.Tests\obj\Debug\netcor
 D:\Petiza\Petiza\server\Petiza\src\Petiza.Catalogo.Domain.Tests\obj\Debug\netcoreapp3.1\Petiza.Catalogo.Domain.Tests.csproj.CopyComplete
 D:\Petiza\Petiza\server\Petiza\src\Petiza.Catalogo.Domain.Tests\obj\Debug\netcoreapp3.1\Petiza.Catalogo.Domain.Tests.dll
 D:\Petiza\Petiza\server\Petiza\src\Petiza.Catalogo.Domain.Tests\obj\Debug\netcoreapp3.1\Petiza.Catalogo.Domain.Tests.pdb
+D:\Petiza\Petiza\server\Petiza\src\Petiza.Catalogo.Domain.Tests\obj\Debug\netcoreapp3.1\Petiza.Catalogo.Domain.Tests.csproj.CoreCompileInputs.cache
+D:\Petiza\Petiza\server\Petiza\src\Petiza.Catalogo.Domain.Tests\obj\Debug\netcoreapp3.1\Petiza.Catalogo.Domain.Tests.genruntimeconfig.cache

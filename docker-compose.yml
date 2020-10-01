@@ -2,25 +2,6 @@ version: '3.7'
 
 services:
 
-  api:
-    build: server/petiza
-    depends_on:
-      - mongo
-      - mssql
-    ports:
-    - 5042:80
-    networks:
-      - petiza
-    environment:
-      - "mongoConnection__server=mongodb://mongo:27017/petiza"
-
-  mongo:
-    image: mongo:latest
-    ports:
-    - 27018:27017
-    networks:
-      - petiza
-
   mssql:
     image: 'microsoft/mssql-server-linux'
     ports:
@@ -30,6 +11,15 @@ services:
         - SA_PASSWORD=Secret1234
     volumes:
         - './drive:/var/opt/mssql'
+
+  api:
+    build: server/petiza
+    depends_on:
+      - mssql
+    ports:
+    - 5042:80
+    networks:
+      - petiza
   
 networks:
   petiza:

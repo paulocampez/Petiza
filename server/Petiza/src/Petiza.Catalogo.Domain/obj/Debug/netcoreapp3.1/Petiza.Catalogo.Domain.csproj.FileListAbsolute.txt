@@ -10,3 +10,4 @@ D:\Petiza\Petiza\server\Petiza\src\Petiza.Catalogo.Domain\bin\Debug\netcoreapp3.
 D:\Petiza\Petiza\server\Petiza\src\Petiza.Catalogo.Domain\obj\Debug\netcoreapp3.1\Petiza.Catalogo.Domain.csproj.CopyComplete
 D:\Petiza\Petiza\server\Petiza\src\Petiza.Catalogo.Domain\obj\Debug\netcoreapp3.1\Petiza.Catalogo.Domain.dll
 D:\Petiza\Petiza\server\Petiza\src\Petiza.Catalogo.Domain\obj\Debug\netcoreapp3.1\Petiza.Catalogo.Domain.pdb
+D:\Petiza\Petiza\server\Petiza\src\Petiza.Catalogo.Domain\obj\Debug\netcoreapp3.1\Petiza.Catalogo.Domain.csproj.CoreCompileInputs.cache

@@ -1,0 +1,24 @@
+{
+  "version": 2,
+  "dgSpecHash": "mKhYo6GkZp806MlfIX8xT2CIGyglMO6A0L2khXCAgBjMuHLWZxhOUic11h4s7v42+IOLi5C9Id14NF4uucGEAg==",
+  "success": true,
+  "projectFilePath": "D:\\Petiza\\Petiza\\server\\Petiza\\src\\Petiza.Catalogo.Application\\Petiza.Catalogo.Application.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\PauloCampez\\.nuget\\packages\\automapper\\10.0.0\\automapper.10.0.0.nupkg.sha512",
+    "C:\\Users\\PauloCampez\\.nuget\\packages\\awssdk.core\\3.5.1.20\\awssdk.core.3.5.1.20.nupkg.sha512",
+    "C:\\Users\\PauloCampez\\.nuget\\packages\\awssdk.s3\\3.5.2\\awssdk.s3.3.5.2.nupkg.sha512",
+    "C:\\Users\\PauloCampez\\.nuget\\packages\\bogus\\31.0.2\\bogus.31.0.2.nupkg.sha512",
+    "C:\\Users\\PauloCampez\\.nuget\\packages\\microsoft.aspnetcore.http.features\\3.1.8\\microsoft.aspnetcore.http.features.3.1.8.nupkg.sha512",
+    "C:\\Users\\PauloCampez\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\PauloCampez\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\3.1.8\\microsoft.extensions.configuration.abstractions.3.1.8.nupkg.sha512",
+    "C:\\Users\\PauloCampez\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\3.1.8\\microsoft.extensions.dependencyinjection.abstractions.3.1.8.nupkg.sha512",
+    "C:\\Users\\PauloCampez\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\3.1.8\\microsoft.extensions.fileproviders.abstractions.3.1.8.nupkg.sha512",
+    "C:\\Users\\PauloCampez\\.nuget\\packages\\microsoft.extensions.hosting.abstractions\\3.1.8\\microsoft.extensions.hosting.abstractions.3.1.8.nupkg.sha512",
+    "C:\\Users\\PauloCampez\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\3.1.8\\microsoft.extensions.logging.abstractions.3.1.8.nupkg.sha512",
+    "C:\\Users\\PauloCampez\\.nuget\\packages\\microsoft.extensions.primitives\\3.1.8\\microsoft.extensions.primitives.3.1.8.nupkg.sha512",
+    "C:\\Users\\PauloCampez\\.nuget\\packages\\polly\\7.2.1\\polly.7.2.1.nupkg.sha512",
+    "C:\\Users\\PauloCampez\\.nuget\\packages\\system.io.pipelines\\4.7.2\\system.io.pipelines.4.7.2.nupkg.sha512",
+    "C:\\Users\\PauloCampez\\.nuget\\packages\\system.reflection.emit\\4.7.0\\system.reflection.emit.4.7.0.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -68,6 +68,14 @@ namespace Petiza.Catalogo.Data.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Categorias");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = new Guid("4ee35607-2d8d-4e45-a21d-167ff918ee74"),
+                            Codigo = 1,
+                            Nome = "Cachorro"
+                        });
                 });
 
             modelBuilder.Entity("Petiza.Catalogo.Domain.Animal", b =>

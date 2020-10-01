@@ -20,6 +20,8 @@ using Petiza.Catalogo.Application.Services;
 using Petiza.Catalogo.Data;
 using Petiza.Catalogo.Data.Repository;
 using Petiza.Catalogo.Domain;
+using Petiza.Core.Services;
+using Polly;
 
 namespace Petiza.Catalogo.Api
 {
@@ -40,7 +42,7 @@ namespace Petiza.Catalogo.Api
             services.AddAutoMapper(typeof(Startup));
 
             services.AddControllers();
-
+            services.AddHostedService<QueueHostedService>();
             services.AddScoped<IAnimalApplicationService, AnimalApplicationService>();
             services.AddScoped<IAnimalRepository, AnimalRepository>();
             services.AddDbContext<CatalogoContext>(options =>
@@ -76,12 +78,20 @@ namespace Petiza.Catalogo.Api
             });
 
             app.UseStaticFiles();
-            app.UseStaticFiles(new StaticFileOptions()
-            {
-                FileProvider = new PhysicalFileProvider(Path.Combine(Directory.GetCurrentDirectory(), @"Resources")),
-                RequestPath = new PathString("/Resources")
-            });
+            //app.UseStaticFiles(new StaticFileOptions()
+            //{
+            //    FileProvider = new PhysicalFileProvider(Path.Combine(Directory.GetCurrentDirectory(), @"Resources")),
+            //    RequestPath = new PathString("/Resources")
+            //});
+            var policy = Policy.Handle<Exception>().WaitAndRetryForever(retryAttempt => TimeSpan.FromSeconds(5), onRetry: (exception, timespan) =>
+                Console.WriteLine("Falha ao realizar migration: " + exception.Message));
 
+            policy.Execute(() => Executar(app));
+            
+        }
+
+        private void Executar(IApplicationBuilder app)
+        {
             using (var scope = app.ApplicationServices.GetRequiredService<IServiceScopeFactory>().CreateScope())
             {
                 scope.ServiceProvider.GetService<CatalogoContext>().Database.Migrate();

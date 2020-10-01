@@ -14,3 +14,5 @@ D:\Petiza\Petiza\server\Petiza\src\Petiza.Catalogo.Data\bin\Debug\netcoreapp3.1\
 D:\Petiza\Petiza\server\Petiza\src\Petiza.Catalogo.Data\bin\Debug\netcoreapp3.1\Petiza.Catalogo.Domain.pdb
 D:\Petiza\Petiza\server\Petiza\src\Petiza.Catalogo.Data\obj\Debug\netcoreapp3.1\Petiza.Catalogo.Data.dll
 D:\Petiza\Petiza\server\Petiza\src\Petiza.Catalogo.Data\obj\Debug\netcoreapp3.1\Petiza.Catalogo.Data.pdb
+D:\Petiza\Petiza\server\Petiza\src\Petiza.Catalogo.Data\obj\Debug\netcoreapp3.1\Petiza.Catalogo.Data.csproj.CoreCompileInputs.cache
+D:\Petiza\Petiza\server\Petiza\src\Petiza.Catalogo.Data\obj\Debug\netcoreapp3.1\Petiza.Catalogo.Data.genruntimeconfig.cache

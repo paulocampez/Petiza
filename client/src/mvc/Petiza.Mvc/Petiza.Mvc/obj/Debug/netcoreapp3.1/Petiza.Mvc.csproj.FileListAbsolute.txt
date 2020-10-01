@@ -119,3 +119,5 @@ D:\Petiza\Petiza\client\src\mvc\Petiza.Mvc\Petiza.Mvc\bin\Debug\netcoreapp3.1\Mi
 D:\Petiza\Petiza\client\src\mvc\Petiza.Mvc\Petiza.Mvc\bin\Debug\netcoreapp3.1\System.Net.Http.Formatting.dll
 D:\Petiza\Petiza\client\src\mvc\Petiza.Mvc\Petiza.Mvc\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
 D:\Petiza\Petiza\client\src\mvc\Petiza.Mvc\Petiza.Mvc\obj\Debug\netcoreapp3.1\Petiza.Mvc.MvcApplicationPartsAssemblyInfo.cache
+D:\Petiza\Petiza\client\src\mvc\Petiza.Mvc\Petiza.Mvc\obj\Debug\netcoreapp3.1\Petiza.Mvc.csproj.CoreCompileInputs.cache
+D:\Petiza\Petiza\client\src\mvc\Petiza.Mvc\Petiza.Mvc\obj\Debug\netcoreapp3.1\Petiza.Mvc.genruntimeconfig.cache
